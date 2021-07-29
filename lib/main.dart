@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:camera/camera.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -15,6 +17,7 @@ main() async{
 }
 
 class MyApp extends StatelessWidget {
+  static List<File>images=[];
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

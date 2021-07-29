@@ -1,6 +1,7 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:task/images.dart';
 
 import 'CameraScreen.dart';
 
@@ -48,7 +49,10 @@ class _state extends State<Home>{
              ),
              GestureDetector(
                onTap: ()async{
-
+                 Navigator.push(
+                   context,
+                   MaterialPageRoute(builder: (context) => Images()),
+                 );
                },
                child: Container(
                    width: MediaQuery.of(context).size.width*.4,
